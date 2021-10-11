@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Upload and Download Functionality</title>
+    <script>
+      if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+      }
+    </script>
+    <!--<link rel="stylesheet" href="style.css">-->
+  </head>
+
+  <body>
+
+  <h1><Center>File Upload Node Testing</Center></h1><br>
+  <center>
+    <form method="POST" action="/" enctype="multipart/form-data">
+    <input type="file" name="file"/><br><br>
+    <input type="submit" value="upload" style=" 
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    "/>
+  </form>
+</center>
+  </body>
+</html>
